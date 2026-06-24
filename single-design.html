@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Specification Case | Apex Horizon Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="designs.html" class="floating-back-anchor" aria-label="Return to Designs Portfolio Archive"
+        style="background-color: #111622 !important; color: #ffffff !important; border: 2px solid var(--accent-color) !important; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75) !important;">
+        <i class="fa-solid fa-arrow-left-long" style="color: #ffffff !important;"></i>
+    </a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Apex<span>Horizon</span></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="designs.html" class="nav-item active">Designs Portfolio</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="project-hero" class="hero-section single-project-hero" style="transition: background-image 0.5s ease;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" id="hero-content-wrapper">
+            <div id="single-loader"
+                style="font-family: 'Inter', sans-serif; letter-spacing: 2px; font-size: 0.9rem; color: var(--text-light); text-transform: uppercase;">
+                STREAMING BLUEPRINT SPECIFICATIONS<span id="single-blinking-dots"></span>
+            </div>
+
+            <span id="hero-subtitle" class="hero-subtitle"
+                style="display:none; opacity: 0; transition: opacity 0.4s ease;"></span>
+            <h1 id="hero-title" style="display:none; opacity: 0; transition: opacity 0.4s ease;"></h1>
+            <p id="hero-desc" style="display:none; opacity: 0; transition: opacity 0.4s ease;"></p>
+        </div>
+    </section>
+
+    <section class="spatial-spec-strip" id="spec-strip-wrapper" style="opacity: 0; transition: opacity 0.5s ease;">
+        <div class="container spec-strip-grid" id="spec-grid"></div>
+    </section>
+
+    <section class="project-details-section" id="details-content-wrapper"
+        style="opacity: 0; transition: opacity 0.5s ease;">
+        <div class="container project-split-details">
+
+            <div class="narrative-column">
+                <span class="section-tag" id="narrative-tag"></span>
+                <h2 class="section-title" id="narrative-concept-title"></h2>
+                <p class="section-desc" id="narrative-p1"></p>
+
+                <div class="highlight-quote-block">
+                    <blockquote id="narrative-quote"></blockquote>
+                    <span class="quote-author" id="narrative-author"></span>
+                </div>
+
+                <p class="section-desc" id="narrative-p2"></p>
+            </div>
+
+            <div class="blueprint-engine-column">
+                <div class="engine-wrapper">
+                    <div class="engine-tabs">
+                        <button class="tab-link active"
+                            onclick="switchEngineTab(event, 'floorplan')">Floorplans</button>
+                        <button class="tab-link" onclick="switchEngineTab(event, 'materials')">Material Palette</button>
+                        <button class="tab-link" onclick="switchEngineTab(event, 'elevation')">Site Elevation</button>
+                    </div>
+
+                    <div id="engine-panes-container"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="blueprint-cta-strip">
+        <div class="container cta-flex-wrapper">
+            <div class="cta-text-box">
+                <h2>Acquire Layout Blueprint Concept Files</h2>
+                <p>Request the complete structural package, architectural engineering schedules, and interior layout
+                    specifications.</p>
+            </div>
+            <div class="cta-action-box">
+                <a href="contact.html" class="btn btn-primary"><span>Initiate Acquisition Brief</span> <i
+                        class="fa-solid fa-file-invoice"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">Apex<span>Horizon</span></h2>
+                <p class="brand-desc">Designing custom structural modern residences with signature dark finishes.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Our Designs</h3>
+                <ul class="footer-links" id="dynamic-footer-designs"></ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="designs.html">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Apex Horizon Homes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        let tabDataCache = {};
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const designId = urlParams.get('id') || 'aurora';
+
+            // 1. Fire up the 3-Dot loading sequence loop immediately
+            let dotCount = 0;
+            const singleDotInterval = setInterval(() => {
+                const dotsElem = document.getElementById("single-blinking-dots");
+                if (dotsElem) {
+                    dotCount = (dotCount + 1) % 4;
+                    dotsElem.innerText = ".".repeat(dotCount);
+                }
+            }, 400);
+
+            // 2. Fetch the specification data from directory link
+            fetch("data/designs.json")
+                .then(res => res.json())
+                .then(designs => {
+                    const design = designs.find(d => d.id === designId);
+
+                    // Kill loader animation cleanly
+                    clearInterval(singleDotInterval);
+
+                    if (!design) {
+                        document.getElementById("single-loader").innerText = "Specification File Not Found";
+                        return;
+                    }
+
+                    // 3. Populate text values behind the scenes while hidden
+                    document.title = `${design.title} Layout Specification | Apex Horizon`;
+                    document.getElementById("project-hero").style.backgroundImage = `url('${design.heroImage}')`;
+
+                    document.getElementById("hero-subtitle").innerText = design.subtitle;
+                    document.getElementById("hero-title").innerText = design.title;
+                    document.getElementById("hero-desc").innerText = design.description;
+
+                    document.getElementById("narrative-tag").innerText = design.tag;
+                    document.getElementById("narrative-concept-title").innerText = design.conceptTitle;
+                    document.getElementById("narrative-p1").innerText = design.narrativeP1;
+                    document.getElementById("narrative-quote").innerText = `"${design.quote}"`;
+                    document.getElementById("narrative-author").innerText = design.quoteAuthor;
+                    document.getElementById("narrative-p2").innerText = design.narrativeP2;
+
+                    document.getElementById("spec-grid").innerHTML = `
+                        <div class="spec-tile"><span class="spec-label">Footprint Scope</span><span class="spec-value">${design.specs.footprint}</span></div>
+                        <div class="spec-tile"><span class="spec-label">Spatial Levels</span><span class="spec-value">${design.specs.levels}</span></div>
+                        <div class="spec-tile"><span class="spec-label">Configured Suites</span><span class="spec-value">${design.specs.suites}</span></div>
+                        <div class="spec-tile"><span class="spec-label">Primary Finishes</span><span class="spec-value">${design.specs.finishes}</span></div>
+                    `;
+
+                    tabDataCache = design.tabs;
+                    renderTabPanes();
+
+                    // 4. Reveal phase transition execution sequence
+                    document.getElementById("single-loader").style.display = "none";
+
+                    const sub = document.getElementById("hero-subtitle");
+                    const title = document.getElementById("hero-title");
+                    const desc = document.getElementById("hero-desc");
+
+                    // Restore visible block tracking rules
+                    sub.style.display = "block";
+                    title.style.display = "block";
+                    desc.style.display = "block";
+
+                    // Trigger smooth opacity interpolation animations
+                    setTimeout(() => {
+                        sub.style.opacity = "1";
+                        title.style.opacity = "1";
+                        desc.style.opacity = "1";
+                        document.getElementById("spec-strip-wrapper").style.opacity = "1";
+                        document.getElementById("details-content-wrapper").style.opacity = "1";
+                    }, 50);
+                })
+                .catch(err => {
+                    clearInterval(singleDotInterval);
+                    console.error("System failed to initialize single view track:", err);
+                    document.getElementById("single-loader").innerText = "Error streaming asset specifications.";
+                });
+        });
+
+        function renderTabPanes() {
+            const container = document.getElementById("engine-panes-container");
+            container.innerHTML = Object.keys(tabDataCache).map((tabKey, idx) => `
+                <div id="${tabKey}" class="engine-tab-pane ${idx === 0 ? 'active' : ''}">
+                    <div class="pane-visual">
+                        <img src="${tabDataCache[tabKey].image}" alt="${tabDataCache[tabKey].title}">
+                    </div>
+                    <div class="pane-details">
+                        <h4>${tabDataCache[tabKey].title}</h4>
+                        <p>${tabDataCache[tabKey].desc}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function switchEngineTab(event, tabId) {
+            const panes = document.querySelectorAll('.engine-tab-pane');
+            const links = document.querySelectorAll('.tab-link');
+            panes.forEach(pane => pane.classList.remove('active'));
+            links.forEach(link => link.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

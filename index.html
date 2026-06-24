@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Horizon | Metropolitan Luxury Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Apex<span>Horizon</span></a>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="designs.html" class="nav-item">Designs Portfolio</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Bespoke Architectural Noir</span>
+            <h1>Bespoke Luxury,<br>Defined By Shadows</h1>
+            <p>Crafting elite, modern metropolitan residences that balance monochromatic stone facades with warm,
+                ambient structural illumination.</p>
+            <div class="hero-actions">
+                <a href="designs.html" class="btn btn-primary">Explore Portfolio</a>
+                <a href="contact.html" class="btn btn-secondary">Request Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Architecture Philosophy</h2>
+                <p>Every home is engineered with striking structural framing, premium natural dark finishes, and
+                    seamless indoor-outdoor living boundaries.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3>Bespoke Schematics</h3>
+                    <p>Custom 2D layout planning and high-fidelity 3D modeling tailored strictly to aggressive lot
+                        constraints and elite structural requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-cubes"></i></div>
+                    <h3>Obsidian Finishes</h3>
+                    <p>Curating raw stone layers, dark wood panels, and carbon steel profiles engineered to absorb light
+                        and showcase clean linear design lines.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Luminous Spaces</h3>
+                    <p>Integrating high-end recessed LED illumination channels that accent structural details when the
+                        sun goes down.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Masterpieces</h2>
+                <p>A selective look inside our primary residential architectural models.</p>
+            </div>
+            <div class="portfolio-grid" id="home-featured-grid">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Perspectives</h2>
+                <p>What our custom estate owners say about the Apex experience.</p>
+            </div>
+
+            <div class="reviews-slider" style="width: 100%; position: relative; overflow: hidden; margin: 0 auto;">
+                <div class="reviews-track" id="home-reviews-track"
+                    style="display: flex; transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); width: 500%;">
+                </div>
+
+                <div class="slider-pagination-controls"
+                    style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 40px;">
+                    <button id="slider-prev-btn" aria-label="Previous Review Page"
+                        style="background: #161c2a; color: #ffffff; border: 2px solid var(--accent-color, #d4af37); width: 45px; height: 45px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div class="slider-dots" id="home-reviews-dots"
+                        style="display: flex; gap: 10px; margin: 0; justify-content: center; align-items: center;">
+                    </div>
+
+                    <button id="slider-next-btn" aria-label="Next Review Page"
+                        style="background: #161c2a; color: #ffffff; border: 2px solid var(--accent-color, #d4af37); width: 45px; height: 45px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5.5 PREMIUM LEAD MAGNET MODULE -->
+    <section class="lead-magnet-section">
+        <div class="container">
+            <div class="lead-magnet-wrapper">
+                <!-- Visual Asset Column -->
+                <div class="lead-image-col">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
+                        alt="Bespoke Architectural Consulting Session">
+                    <div class="image-gradient-overlay"></div>
+                </div>
+                <!-- Interactive Action Form Column -->
+                <div class="lead-content-col">
+                    <span class="lead-tagline">Exclusive Access</span>
+                    <h2>Begin Your Structural Masterpiece</h2>
+                    <p>Download our digital 2026 Lookbook and receive a complimentary 1-on-1 site layout feasibility
+                        assessment with our principal design engineers.</p>
+
+                    <form class="lead-capture-form"
+                        onsubmit="event.preventDefault(); alert('Lookbook & consultation request submitted successfully.');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Full Name" required aria-label="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Premium Email Address" required
+                                aria-label="Email Address">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Secure Complimentary Consultation <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </form>
+                    <p class="form-disclaimer"><i class="fa-solid fa-lock"></i> Your property details and contact data
+                        remain strictly confidential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">Apex<span>Horizon</span></h2>
+                <p class="brand-desc">Designing custom structural modern residences with signature dark finishes,
+                    premium stone elements, and optimized spatial configurations.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Our Designs</h3>
+                <ul class="footer-links" id="dynamic-footer-designs">
+                    <!-- Automatically Generated via app.js -->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="designs.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Consultations</h3>
+                <ul class="footer-contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> <span>102 Innovation Way, NY 10013</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+18005550199">1-800-555-0199</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:build@apexhorizon.com">build@apexhorizon.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Apex Horizon Homes. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

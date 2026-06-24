@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiate Consultation | Apex Horizon Architecture</title>
+    <!-- Google Fonts: Cinzel for Heritage Headings, Inter for Clean Body Text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Kit for Dark Metallic Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. NAVIGATION HEADER MODULE -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Apex<span>Horizon</span></a>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="designs.html" class="nav-item">Designs Portfolio</a>
+                <a href="contact.html" class="nav-item active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. CENTERED INNER HERO BLOCK -->
+    <section class="hero-section inner-page-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Project Onboarding Suite</span>
+            <h1>Begin Your Concept</h1>
+            <p>Connect with our engineering staff to transition structural sketches into custom reality.</p>
+        </div>
+    </section>
+
+    <!-- 3. OPERATIONAL TWO-COLUMN CONTACT INTAKE SECTION -->
+    <section class="contact-section">
+        <div class="container contact-split-grid">
+
+            <!-- Column A: Premium Information Block System -->
+            <div class="contact-info-block">
+                <span class="section-tag">Direct Lines</span>
+                <h2 class="section-title">The HQ Concierge</h2>
+                <p class="section-desc">Our design studio facilitates elite custom modern builds internationally. Reach
+                    out directly or complete our structured intake matrix.</p>
+
+                <div class="info-card-container">
+                    <!-- HQ Office Address -->
+                    <div class="info-meta-card">
+                        <div class="info-icon-box">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div class="info-text-box">
+                            <h4>Design Studio HQ</h4>
+                            <p>102 Innovation Way, Studio 4B<br>New York, NY 10013</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct Communications -->
+                    <div class="info-meta-card">
+                        <div class="info-icon-box">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="info-text-box">
+                            <h4>Direct Connection</h4>
+                            <p><strong>General:</strong> <a href="tel:+18005550199">1-800-555-0199</a></p>
+                            <p><strong>Inquiries:</strong> <a
+                                    href="mailto:build@apexhorizon.com">build@apexhorizon.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Studio Availability -->
+                    <div class="info-meta-card">
+                        <div class="info-icon-box">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="info-text-box">
+                            <h4>Operational Hours</h4>
+                            <p>Monday – Friday: 09:00 – 18:00 EST</p>
+                            <p>Saturday Consultation Sessions By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column B: Interactive Custom Intake Engine Form Layout -->
+            <div class="contact-form-block">
+                <div class="form-wrapper-card">
+                    <h3>Consultation Intake Brief</h3>
+                    <p>Provide structural project scope details to route your brief to our core architects.</p>
+
+                    <form id="architectureIntakeForm" action="#" method="POST" onsubmit="handleFormSubmission(event)">
+                        <div class="form-grid-two-col">
+                            <!-- Full Name Field -->
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required placeholder="Alex Mercer">
+                            </div>
+                            <!-- Email Address Field -->
+                            <div class="form-group">
+                                <label for="emailAddress">Email Address *</label>
+                                <input type="email" id="emailAddress" name="emailAddress" required
+                                    placeholder="alex@domain.com">
+                            </div>
+                        </div>
+
+                        <div class="form-grid-two-col">
+                            <!-- Phone Number Field -->
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+1 (555) 000-0000">
+                            </div>
+                            <!-- Estimated Investment Select System -->
+                            <div class="form-group">
+                                <label for="projectBudget">Investment Scope *</label>
+                                <select id="projectBudget" name="projectBudget" required>
+                                    <option value="" disabled selected>Select Budget Tier</option>
+                                    <option value="tier1">$1.5M – $3.0M Budget Range</option>
+                                    <option value="tier2">$3.0M – $6.0M Budget Range</option>
+                                    <option value="tier3">$6.0M+ Premium Enterprise Tier</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Project Concept Brief Message Area -->
+                        <div class="form-group">
+                            <label for="projectMessage">Structural Project Brief *</label>
+                            <textarea id="projectMessage" name="projectMessage" rows="5" required
+                                placeholder="Describe your vision (e.g., location parameters, desired spatial levels, landscape goals)..."></textarea>
+                        </div>
+
+                        <!-- Interactive Form Submission Response UI Block -->
+                        <div id="formFeedback" class="form-feedback-banner"></div>
+
+                        <!-- High-End Dark Call To Action Form Button -->
+                        <button type="submit" class="btn btn-primary btn-full-width">
+                            <span>Dispatch Project Blueprint Brief</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. HIGH-END LEGAL FOOTER ANCHOR -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">Apex<span>Horizon</span></h2>
+                <p class="brand-desc">Designing custom structural modern residences with signature dark finishes,
+                    premium stone elements, and optimized spatial configurations.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Our Designs</h3>
+                <ul class="footer-links" id="dynamic-footer-designs">
+                    <!-- Automatically Generated via app.js -->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="designs.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Consultations</h3>
+                <ul class="footer-contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> <span>102 Innovation Way, NY 10013</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+18005550199">1-800-555-0199</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:build@apexhorizon.com">build@apexhorizon.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Apex Horizon Homes. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Intake Interactivity Engine Logic -->
+    <script src="app.js"></script>
+    <script>
+        function handleFormSubmission(event) {
+            event.preventDefault();
+            const feedback = document.getElementById('formFeedback');
+
+            // Simulating intake routing transmission validation
+            feedback.style.display = 'block';
+            feedback.className = 'form-feedback-banner processing';
+            feedback.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Encrypting & transmitting structural brief channels...';
+
+            setTimeout(() => {
+                feedback.className = 'form-feedback-banner success';
+                feedback.innerHTML = '<i class="fa-solid fa-circle-check"></i> Project Brief Logged. A Principal Structural Design Lead will contact you within 24 hours.';
+                document.getElementById('architectureIntakeForm').reset();
+            }, 1800);
+        }
+    </script>
+</body>

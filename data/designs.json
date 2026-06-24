@@ -1,0 +1,218 @@
+[
+  {
+    "id": "aurora",
+    "title": "The Aurora Vista",
+    "subtitle": "Metropolitan Series // Case Spec 001",
+    "heroImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80",
+    "description": "A masterclass in linear dark framing, custom double-height glazing, and integrated organic structural boundaries.",
+    "tag": "Design Ideation",
+    "conceptTitle": "The Structural Concept",
+    "narrativeP1": "Engineered for maximizing dramatic elevation contours, the Aurora Vista centers around an open-axis monolithic layout frame. The perimeter features custom structural steel plates layered with deep charcoal natural slate blocks.",
+    "quote": "The primary engineering objective was absolute spatial continuity—allowing the external landscape elements to slice seamlessly through the interior.",
+    "quoteAuthor": "Marcus Vance, Lead Structural Architect",
+    "narrativeP2": "The interior layout utilizes advanced hidden support trusses to eliminate internal structural partition column lines, generating completely open zones.",
+    "specs": {
+      "footprint": "6,850 SQ FT",
+      "levels": "3 Stories",
+      "suites": "5 Beds / 6.5 Baths",
+      "finishes": "Onyx Slate & Bronze"
+    },
+    "tabs": {
+      "floorplan": {
+        "title": "Level 02 Master Manifest",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+        "desc": "Features a cantilevered sky-bridge connecting the primary residential wing to an isolated creative studio space."
+      },
+      "materials": {
+        "title": "Premium Raw Form Elements",
+        "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+        "desc": "Composed of wire-brushed charred timber facades (Shou Sugi Ban) and honed absolute black granite blocks."
+      },
+      "elevation": {
+        "title": "Topography Cross-Section",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+        "desc": "Engineered with a reinforced deep-pile foundation matrix, compensating perfectly for hillside slopes."
+      }
+    }
+  },
+  {
+    "id": "haven",
+    "title": "The Haven Crest",
+    "subtitle": "Minimalist Noir Series // Case Spec 002",
+    "heroImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1920&q=80",
+    "description": "An intricate, multi-level split layout optimized for tight lot boundaries and aggressive hillside elevation angles.",
+    "tag": "Spatial Optimization",
+    "conceptTitle": "The Structural Concept",
+    "narrativeP1": "The Haven Crest balances high-density spatial constraints with a deep visual footprint. Matte charcoal floor-to-ceiling porcelain panels define the exterior grid shell.",
+    "quote": "We bypassed horizontal restrictions by engineering geometric cantilevers that extend out over the terrain gap.",
+    "quoteAuthor": "Evelyn Sterling, Chief Space Planner",
+    "narrativeP2": "By nesting bedrooms within the lower privacy envelope and pushing open-plan entertaining zones upward, this schematic maximizes panoramic window views.",
+    "specs": {
+      "footprint": "4,200 SQ FT",
+      "levels": "2 Stories + Basement",
+      "suites": "4 Beds / 4.5 Baths",
+      "finishes": "Charcoal Tile & Steel"
+    },
+    "tabs": {
+      "floorplan": {
+        "title": "Lower Split Layout Blueprint",
+        "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+        "desc": "Integrates subterranean custom multi-vehicle parking, automated hidden cellars, and lightwells."
+      },
+      "materials": {
+        "title": "Monochromatic Finish Spec",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+        "desc": "Dominated by split-face graphite slate, acid-etched industrial metal beams, and matte carbon interior bathroom veneers."
+      },
+      "elevation": {
+        "title": "Hillside Foundation Metrics",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+        "desc": "Features segmented retaining walls tied directly into local bedrock structures to arrest shifting earth stress."
+      }
+    }
+  },
+  {
+    "id": "meridian",
+    "title": "The Meridian Ridge",
+    "subtitle": "Metropolitan Series // Case Spec 003",
+    "heroImage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=80",
+    "description": "An expansive linear plateau design layout emphasizing long horizontal axes and sweeping glass curtains.",
+    "tag": "Panoramic Structural Matrix",
+    "conceptTitle": "The Horizon Extension",
+    "narrativeP1": "The Meridian Ridge focuses heavily on unbroken Sightline Horizons. The architectural floorplan wraps completely around an interior sunken structural conversation pit matrix.",
+    "quote": "The structure stretches horizontally to mimic natural ridge line faulting, utilizing structural carbon columns to reduce weight.",
+    "quoteAuthor": "Arthur Pendelton, Structural Layout Engineer",
+    "narrativeP2": "A floating structural roof canopy wraps over the building profile, designed dynamically to manage natural solar tracking heat spikes.",
+    "specs": {
+      "footprint": "7,100 SQ FT",
+      "levels": "2 Stories",
+      "suites": "5 Beds / 5.5 Baths",
+      "finishes": "Carbon Steel & Zinc"
+    },
+    "tabs": {
+      "floorplan": {
+        "title": "Main Longitudinal Level Layout",
+        "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+        "desc": "Features expansive interconnected entertaining spaces directly mirroring the long outer swimming channel lane."
+      },
+      "materials": {
+        "title": "Anodized Dark Metal Elements",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+        "desc": "Utilizes architectural textured black zinc flashing overlays alongside acid-washed concrete framing panels."
+      },
+      "elevation": {
+        "title": "Horizontal Axis Profile",
+        "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+        "desc": "Maintains a strict flat height limit profile constraint, nesting into the background terrain gracefully."
+      }
+    }
+  },
+  {
+    "id": "obsidian",
+    "title": "The Obsidian Keep",
+    "subtitle": "Minimalist Noir Series // Case Spec 004",
+    "heroImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80",
+    "description": "A fortress-like minimalist layout utilizing interlocking monolithic blocks and hidden internal landscape courtyards.",
+    "tag": "Defensive Architecture",
+    "conceptTitle": "The Monolithic Envelope",
+    "narrativeP1": "The Obsidian Keep explores high-privacy luxury. The street-facing facade is completely windowless, utilizing deep geometric architectural slices to catch indirect lighting tracks.",
+    "quote": "True luxury is absolute control over spatial privacy. We built a stone sanctuary that isolates completely from external elements.",
+    "quoteAuthor": "Vance Sterling, Spatial Anthropologist",
+    "narrativeP2": "Once inside, the envelope reveals massive sliding panels that transition into an interior landscape system with reflecting black stone pools.",
+    "specs": {
+      "footprint": "8,250 SQ FT",
+      "levels": "2 Stories + Courtyard",
+      "suites": "6 Beds / 7 Baths",
+      "finishes": "Obsidian Stone & Iron"
+    },
+    "tabs": {
+      "floorplan": {
+        "title": "Central Courtyard Inversion Scheme",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+        "desc": "All living spaces directly interface with the central layout water feature, avoiding any external property sightlines."
+      },
+      "materials": {
+        "title": "Volcanic Finish Selections",
+        "image": "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=800&q=80",
+        "desc": "Features textured volcanic basalt tiles, dark structural iron framing rails, and structural smoked glazing layers."
+      },
+      "elevation": {
+        "title": "Monolithic Mass Diagram",
+        "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+        "desc": "A rigid cuboid architectural design mass utilizing deep inset voids to establish light entries."
+      }
+    }
+  },
+  {
+    "id": "onyx",
+    "title": "The Onyx Monolith",
+    "subtitle": "Resort Estates // Case Spec 005",
+    "heroImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80",
+    "description": "A luxury multi-level resort-tier compound layout featuring overhanging structural decks and infinite horizon pool tracks.",
+    "tag": "Resort-Tier Spatial Matrix",
+    "conceptTitle": "The Cantilever Matrix",
+    "narrativeP1": "The Onyx Monolith redefines elite estate configurations. It features an incredible 25-meter horizontal master wing extending directly over the main valley profile.",
+    "quote": "The floating structural geometry defies visual gravity, giving the owner an impression of suspension inside ambient cloud space.",
+    "quoteAuthor": "Elena Rostova, Chief Engineering Analyst",
+    "narrativeP2": "The lower levels feature custom open-air kitchen structures and custom fitness complexes engineered directly within local mountain rock elements.",
+    "specs": {
+      "footprint": "11,400 SQ FT",
+      "levels": "4 Stories",
+      "suites": "7 Beds / 9.5 Baths",
+      "finishes": "Onyx Marble & Teak"
+    },
+    "tabs": {
+      "floorplan": {
+        "title": "Terraced Entertainment Manifest",
+        "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+        "desc": "Splits public entertainment lounges from isolated master sectors via custom glass biometric gateway tracks."
+      },
+      "materials": {
+        "title": "Polished Stone & Hardwoods",
+        "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+        "desc": "Features vein-matched absolute black onyx slabs, marine-grade black teak decking panels, and brushed gold fixtures."
+      },
+      "elevation": {
+        "title": "Cascading Terraced Elevation Matrix",
+        "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+        "desc": "Four tiers of structural platforms anchored directly down to the cliffside boundary wall profiles."
+      }
+    }
+  },
+  {
+    "id": "shadow",
+    "title": "The Shadow Pavilion",
+    "subtitle": "Resort Estates // Case Spec 006",
+    "heroImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80",
+    "description": "An open-air luxury pavilion architecture concept optimizing internal ventilation tracks and water borders.",
+    "tag": "Biophilic Layout System",
+    "conceptTitle": "The Ambient Grid Node",
+    "narrativeP1": "The Shadow Pavilion balances heavy structural protection with deep nature integration. It uses floating multi-layer slatted roof louvers to cast shifting geometric shadows across structural interior surfaces.",
+    "quote": "Light and shadow are physical building assets. We designed the architecture to morph and alter visually throughout the day.",
+    "quoteAuthor": "Kaelen Mercer, Lighting Scenographer",
+    "narrativeP2": "Shallow water channels line every walkway corridor, naturally lowering internal ambient microclimate temperatures via breeze vectors.",
+    "specs": {
+      "footprint": "9,600 SQ FT",
+      "levels": "1 Story Master Pavilion",
+      "suites": "4 Beds / 5.5 Baths",
+      "finishes": "Charcoal Cedar & Glass"
+    },
+    "tabs": {
+      "floorplan": {
+        "title": "Dispersed Pavilion Grid Array",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+        "desc": "Breaks standard residential floorplans apart into isolated spatial modules unified via climate-sheltered outdoor tracks."
+      },
+      "materials": {
+        "title": "Carbonized Matte Organic Finishes",
+        "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+        "desc": "Features premium carbon-stained cedar, structured absolute-matte dark slate tiles, and ultra-clear low-iron glass panels."
+      },
+      "elevation": {
+        "title": "Low Profile Organic Balance Matrix",
+        "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+        "desc": "A series of sleek horizontal structural lines that nest safely below the local natural tree-line envelope."
+      }
+    }
+  }
+]

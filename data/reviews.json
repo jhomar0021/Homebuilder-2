@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Harrison & Chloe Vance",
+    "project": "The Aurora Vista Custom Concept",
+    "rating": 5,
+    "review": "Building with this team was an exceptional experience. The double-height structural glazing frames our lakeside view perfectly, and the execution of the onyx slate surfaces feels incredibly premium.",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Julian Sterling",
+    "project": "The Haven Crest Layout Realization",
+    "rating": 5,
+    "review": "The geometric cantilevers they engineered resolved our aggressive cliffside structural limits flawlessly. Every square foot of our 4,200 SQ FT footprint is visually striking and highly functional.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Alaina Montgomery",
+    "project": "The Meridian Ridge Custom Estate",
+    "rating": 5,
+    "review": "Our horizontal flat roof layout is an absolute masterpiece. The internal sunken conversation pit has become our absolute favorite space, perfectly matching the long linear pool line.",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Raymond & Vanessa Cruz",
+    "project": "The Obsidian Keep Security Compound",
+    "rating": 5,
+    "review": "Absolute privacy achieved. The completely windowless front facade is incredibly imposing, while the internal glass courtyard around the basalt rock reflecting pool provides an serene sanctuary.",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Siddharth & Meera Nair",
+    "project": "The Onyx Monolith Luxury Compound",
+    "rating": 5,
+    "review": "The massive 25-meter cantilevered master wing is a marvel of architectural engineering. Floating above the valley in vein-matched absolute black onyx marble is a daily luxury.",
+    "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Kaelen Mercer",
+    "project": "The Shadow Pavilion Biophilic Concept",
+    "rating": 5,
+    "review": "As a lighting specialist, I am amazed by how the multi-layer slatted roof louvers play with light. Shifting geometric shadows dance across the charcoal cedar surfaces beautifully throughout the day.",
+    "avatar": "https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Brooke Harrington",
+    "project": "Metropolitan Custom Blueprint 08",
+    "rating": 5,
+    "review": "Their command over monochromatic palettes is outstanding. Our steel-framed urban residence manages to feel warm, expansive, and deeply welcoming despite its sharp, aggressive industrial profile.",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Jonathan Vance",
+    "project": "Minimalist Noir Custom Build",
+    "rating": 4,
+    "review": "The integration of brushed carbon finishes and hidden storage tracks streamlined our home layout perfectly. The execution phase faced slight material logistics challenges, but the final result is flawless.",
+    "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Christian & Sophia Thorne",
+    "project": "Resort Estates Valley Variant",
+    "rating": 5,
+    "review": "Our home feels like an isolated sanctuary. The natural slate flooring blends beautifully with the open-air kitchen space. The cross-ventilation system handles high summer heat without issue.",
+    "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Elena Rostova",
+    "project": "The Obsidian Keep Structural Adaptation",
+    "rating": 5,
+    "review": "An incredible masterclass in high-end structural physics. The dynamic support beams removed all internal dividing column rows, offering unobstructed views across the entire courtyard floorplan.",
+    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Marcus & Olivia Hayes",
+    "project": "The Aurora Vista Variant B",
+    "rating": 5,
+    "review": "We requested adjustments to the Level 02 skybridge blueprint to support an extended outdoor glass observatory platform. The engineering division adapted the file effortlessly.",
+    "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Dorian Blackwood",
+    "project": "Minimalist Noir Geometric Villa",
+    "rating": 5,
+    "review": "I spent months looking for a designer who wasn't afraid of utilizing matte black elements. They delivered a custom charcoal panel masterpiece that turns heads across the entire neighborhood.",
+    "avatar": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 13,
+    "name": "Clara Sinclair",
+    "project": "The Meridian Ridge Secondary Elevation",
+    "rating": 5,
+    "review": "The solar tracking calculations they calculated into our custom extended canopy roof system have minimized our active heating and cooling draw to near zero. Intelligent, sustainable architecture at its finest.",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Ethan & Natalie Vance",
+    "project": "The Haven Crest Custom Variant",
+    "rating": 4,
+    "review": "Our tight lot footprint felt like an impossible obstacle, but their spatial optimization grid proved otherwise. The multi-vehicle basement garage with its hidden entry lightwell is pure genius.",
+    "avatar": "https://images.unsplash.com/photo-1489980508314-941910ded1f4?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 15,
+    "name": "Sterling Jenkins",
+    "project": "Resort Estates Waterfront Compound",
+    "rating": 5,
+    "review": "The structural teak accents paired with industrial glass create an exceptional resort atmosphere. The layout successfully blends our private quarters away from guest entertaining zones.",
+    "avatar": "https://images.unsplash.com/photo-1500048993953-d23a436266cf?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 16,
+    "name": "Dr. Angela Thorne",
+    "project": "The Shadow Pavilion Layout Adapt",
+    "rating": 5,
+    "review": "The water corridors integrated throughout our open floorplan create an amazing microclimate breeze. It functions seamlessly as a biophilic living layout while preserving a distinct structural edge.",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 17,
+    "name": "Gavin & Isabella Vance",
+    "project": "The Onyx Monolith Coastal Spec",
+    "rating": 5,
+    "review": "The reinforced foundations they built directly down into the coastal cliffside bedrock layer withstand the elements perfectly. We feel absolute peace of mind suspended above the ocean edge.",
+    "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 18,
+    "name": "Nadia Volkov",
+    "project": "Metropolitan Structural Office Suite",
+    "rating": 5,
+    "review": "They translated their dark residential signature perfectly into a custom executive creative compound for our design firm. The layout layout boosts daylight catch while hiding screen glare.",
+    "avatar": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 19,
+    "name": "Phillip & Beatrice Vance",
+    "project": "The Aurora Vista Cliffside Suite",
+    "rating": 5,
+    "review": "Stunning use of structural Shou Sugi Ban timber walls. The charred wood texture contrasts beautifully with the brushed gold accents inside our master suite layout. Simply incredible work.",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  {
+    "id": 20,
+    "name": "Xavier Sterling",
+    "project": "Minimalist Noir Subterranean Core",
+    "rating": 5,
+    "review": "They designed a brilliant architectural bunker layout beneath our central terrace block. The hidden geometric escape vectors and raw acid-washed concrete surfaces surpassed my expectations.",
+    "avatar": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=150&h=150&q=80"
+  }
+]
