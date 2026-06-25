@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      // Toggles the class to slide or show the menu container
+      navMenu.classList.toggle("nav-active");
+
+      // Optional: Changes the hamburger bar icon into an 'X' close mark
+      const icon = menuToggle.querySelector("i");
+      if (icon) {
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+      }
+    });
+  }
+});
 // Global engine to populate universal modules
 document.addEventListener("DOMContentLoaded", () => {
   injectDynamicFooters();

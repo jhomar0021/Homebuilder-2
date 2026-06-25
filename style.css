@@ -138,6 +138,42 @@ img {
   transition: var(--transition-smooth);
 }
 
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important; /* Forces hamburger menu visibility on mobile */
+    z-index: 1001;
+  }
+
+  /* Converts navigation bar into an absolute mobile full-screen slide down overlay */
+  .nav-menu {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Fully hidden off-screen by default */
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(11, 15, 25, 0.98);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 100px 40px;
+    gap: 25px;
+    transition: right 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Sleek slide-in effect */
+    z-index: 1000;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  /* The interactive trigger class managed by app.js */
+  .nav-menu.nav-active {
+    right: 0; /* Slides the navigation panel neatly into the view window */
+  }
+
+  .nav-item {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
 .header-container {
   max-width: var(--max-width);
   margin: 0 auto;
