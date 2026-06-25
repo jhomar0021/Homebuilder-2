@@ -47,7 +47,17 @@
 
             <!-- Dynamic injection target grid -->
             <div class="archive-grid" id="archive-grid-target">
-                <!-- 3-Dot Loader streams here before data loads -->
+                <div id="portfolio-loader"
+                    style="grid-column: 1/-1; display: flex; justify-content: center; align-items: center; padding: 100px 0;">
+                    <div class="theme-spinner" style="
+                              width: 40px; 
+                              height: 40px; 
+                              border: 2px solid rgba(255, 255, 255, 0.03); 
+                              border-top: 2px solid var(--accent-color, #d4af37); 
+                              border-radius: 50%; 
+                              animation: architectureSpin 0.8s linear infinite;
+                          "></div>
+                </div>
             </div>
         </div>
     </section>

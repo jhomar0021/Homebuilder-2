@@ -38,21 +38,19 @@ function initializeDynamicPortfolio() {
   const archiveGrid = document.getElementById("archive-grid-target");
   if (!archiveGrid) return;
 
-  // 1. Inject 3-Dot Blinking Loader
-  archiveGrid.innerHTML = `
-        <div id="portfolio-loader" style="grid-column: 1/-1; text-align: center; color: var(--text-light); padding: 80px 0; font-family: 'Inter', sans-serif; letter-spacing: 2px; font-size: 0.9rem;">
-            <span id="blinking-dots"></span>
-        </div>
-    `;
-
-  let dotCount = 0;
-  const dotInterval = setInterval(() => {
-    const dotsElem = document.getElementById("blinking-dots");
-    if (dotsElem) {
-      dotCount = (dotCount + 1) % 4;
-      dotsElem.innerText = ".".repeat(dotCount);
-    }
-  }, 400);
+  // 1. Inject Premium Architectural Minimalist Spinner (No text)
+  //   archiveGrid.innerHTML = `
+  //       <div id="portfolio-loader" style="grid-column: 1/-1; display: flex; justify-content: center; align-items: center; padding: 100px 0;">
+  //           <div class="theme-spinner" style="
+  //               width: 40px;
+  //               height: 40px;
+  //               border: 2px solid rgba(255, 255, 255, 0.03);
+  //               border-top: 2px solid var(--accent-color, #d4af37);
+  //               border-radius: 50%;
+  //               animation: architectureSpin 0.8s linear infinite;
+  //           "></div>
+  //       </div>
+  //   `;
 
   // 2. Fetch data stream from folder directory
   fetch("data/designs.json")
@@ -61,7 +59,10 @@ function initializeDynamicPortfolio() {
       return res.json();
     })
     .then((data) => {
-      clearInterval(dotInterval);
+      // Safely wipe out the loader element container right before rendering modules
+      const loader = document.getElementById("portfolio-loader");
+      if (loader) loader.remove();
+
       allDesignsCached = data;
 
       // 3. Render out modules dynamically
@@ -70,12 +71,14 @@ function initializeDynamicPortfolio() {
       setupFilterListeners();
     })
     .catch((err) => {
-      clearInterval(dotInterval);
+      // Wipe the loader on failure and surface an elegant error message
+      const loader = document.getElementById("portfolio-loader");
+      if (loader) loader.remove();
+
       console.error("Portfolio ecosystem compilation failed:", err);
-      archiveGrid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: red; padding: 40px;">Failed to link structural design files.</div>`;
+      archiveGrid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: red; padding: 40px; font-family: 'Inter', sans-serif; font-size: 0.9rem; letter-spacing: 1px;">Failed to link structural design files.</div>`;
     });
 }
-
 // Generates dynamic buttons based ONLY on existing JSON data
 function injectDynamicFilterBar(designsArray, targetGrid) {
   if (document.querySelector(".portfolio-filter-bar")) return;

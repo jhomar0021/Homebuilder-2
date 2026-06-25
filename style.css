@@ -1107,6 +1107,15 @@ img {
   transition: var(--transition-smooth);
 }
 
+/* Rotational Animation Matrix for Theme Loader Spinners */
+@keyframes architectureSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Individual Portfolio Card Extensions (Unique to Grid view) */
 .archive-grid .portfolio-card {
   display: block;
