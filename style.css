@@ -1695,3 +1695,41 @@ img {
     background-color: var(--bg-surface); /* Pure solid fallback mode */
   }
 }
+
+.story-metrics {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Splits seamlessly across three uniform tracks */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.metric-item {
+  text-align: left;
+}
+
+.metric-item h3 {
+  font-family: var(--display-font, "Cinzel", serif);
+  font-size: 2.5rem;
+  color: var(--accent-color, #d4af37);
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.metric-item span {
+  font-family: var(--main-font, "Inter", sans-serif);
+  color: var(--text-muted, #9ca3af);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* TABLET AND MOBILE RESPONSIVE HOOKS */
+@media (max-width: 768px) {
+  .story-metrics {
+    grid-template-columns: 1fr; /* Safely collapse into a clean, modern vertical column on phones */
+    gap: 25px;
+  }
+}

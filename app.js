@@ -372,3 +372,69 @@ function setupSliderInteractivity(track, dotsContainer, totalPages) {
   gotoPage(0);
   startAutoSlide();
 }
+
+// Append this routing hook to your existing DOMContentLoaded listener block
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.querySelector(".count-target")) {
+    initializeMetricCounters();
+  }
+});
+
+/* ==========================================================================
+   METRIC COUNTER ANIMATION ENGINE
+   ========================================================================= */
+function initializeMetricCounters() {
+  const counters = document.querySelectorAll(".count-target");
+  const animationDuration = 1000; // Total duration of the counting effect in milliseconds (2 seconds)
+
+  const startCounting = (counterElement) => {
+    const targetValue = parseInt(
+      counterElement.getAttribute("data-target"),
+      10,
+    );
+    const suffix = counterElement.getAttribute("data-suffix") || "";
+    const startTime = performance.now();
+
+    const updateNumber = (currentTime) => {
+      const elapsedTime = currentTime - startTime;
+
+      // Calculate progress as a fraction between 0 and 1
+      const progress = Math.min(elapsedTime / animationDuration, 1);
+
+      // Apply a subtle ease-out power curve so the count slows down elegantly near the finish line
+      const easeOutProgress = 1 - Math.pow(1 - progress, 3);
+
+      // Calculate the current frame numeric value
+      const currentValue = Math.floor(easeOutProgress * targetValue);
+
+      // Inject text value back to frame markup node
+      counterElement.innerText = currentValue + suffix;
+
+      if (progress < 1) {
+        requestAnimationFrame(updateNumber);
+      } else {
+        counterElement.innerText = targetValue + suffix; // Hard guarantee final exact bounds are met
+      }
+    };
+
+    requestAnimationFrame(updateNumber);
+  };
+
+  // Construct the Intersection Observer viewport trigger
+  const observerOptions = {
+    root: null, // Default window tracking frame bounds
+    threshold: 0.1, // Fires when at least 10% of the metrics element card breaks viewable layout boundaries
+  };
+
+  const metricsObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        startCounting(entry.target);
+        observer.unobserve(entry.target); // Kill tracking on this node immediately so it only plays once
+      }
+    });
+  }, observerOptions);
+
+  // Attach tracking instances to individual metric target elements
+  counters.forEach((counter) => metricsObserver.observe(counter));
+}
